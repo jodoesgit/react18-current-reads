@@ -6,53 +6,41 @@ import "./css/index.css";
 // const title = "We Have Always Lived in the Castle";
 // const img = require("./img/books/book3.jpg");
 
-const firstBook = {
-	author: "Shelby Van Pelt",
-	title: "Remarkably Bright Creatures",
-	img: require("./img/books/book1.jpg"),
-};
-
-const secondBook = {
-	author: "Grady Hendrix",
-	title: "How to Sell a Haunted House",
-	img: require("./img/books/book2.jpg"),
-};
-
-const thirdBook = {
-	author: "Shirley Jackson",
-	title: "We Have Always Lived in the Castle",
-	img: require("./img/books/book3.jpg"),
-};
-
-const fourthBook = {
-	author: "Min Jin Lee",
-	title: "Pachinko",
-	img: require("./img/books/book4.jpg"),
-};
+const books = [
+	{
+		author: "Shelby Van Pelt",
+		title: "Remarkably Bright Creatures",
+		img: require("./img/books/book1.jpg"),
+		id: 1,
+	},
+	{
+		author: "Grady Hendrix",
+		title: "How to Sell a Haunted House",
+		img: require("./img/books/book2.jpg"),
+		id: 2,
+	},
+	{
+		author: "Shirley Jackson",
+		title: "We Have Always Lived in the Castle",
+		img: require("./img/books/book3.jpg"),
+		id: 3,
+	},
+	{
+		author: "Min Jin Lee",
+		title: "Pachinko",
+		img: require("./img/books/book4.jpg"),
+		id: 4,
+	},
+];
 
 const BookList = () => {
 	return (
 		<section className="booklist">
-			<Book
-				author={firstBook.author}
-				title={firstBook.title}
-				img={firstBook.img}
-			/>
-			<Book
-				author={secondBook.author}
-				title={secondBook.title}
-				img={secondBook.img}
-			/>
-			<Book
-				author={thirdBook.author}
-				title={thirdBook.title}
-				img={thirdBook.img}
-			/>
-			<Book
-				author={fourthBook.author}
-				title={fourthBook.title}
-				img={fourthBook.img}
-			/>
+			{books.map((book) => {
+				const { img, title, author, id } = book;
+
+				return <Book img={img} title={title} author={author} key={id} />;
+			})}
 		</section>
 	);
 };
