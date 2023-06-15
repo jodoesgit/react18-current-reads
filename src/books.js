@@ -1,4 +1,4 @@
-export const books = [
+const books = [
 	{
 		author: "Shelby Van Pelt",
 		title: "Remarkably Bright Creatures",
@@ -24,3 +24,5 @@ export const books = [
 		id: 4,
 	},
 ];
+
+export default books;

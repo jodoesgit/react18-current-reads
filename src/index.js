@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./css/index.css";
-import { books } from "./books";
+import books from "./books";
 
 const BookList = () => {
 	return (
