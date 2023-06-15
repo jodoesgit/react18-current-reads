@@ -37,7 +37,7 @@ const BookList = () => {
 	return (
 		<section className="booklist">
 			{books.map((book) => {
-				return <Book book={book} key={book.id} />;
+				return <Book {...book} key={book.id} />;
 			})}
 		</section>
 	);
