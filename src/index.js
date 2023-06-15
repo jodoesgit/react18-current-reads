@@ -8,7 +8,7 @@ import Book from "./Book";
 const BookList = () => {
 	return (
 		<>
-			<h1>Joji's Recently Read</h1>
+			<h1>Jo's Current Reads</h1>
 			<section className="booklist">
 				{books.map((book, index) => {
 					return <Book {...book} key={book.id} number={index} />;
