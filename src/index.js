@@ -56,7 +56,7 @@ const Book = (props) => {
 		<article className="book">
 			<img src={img} alt={title} />
 			<h2>{title}</h2>
-			<button onClick={getSingleBook}>Add to Cart</button>
+			<button onClick={() => getBook(id)}>Add to Cart</button>
 			<h4>{author}</h4>
 		</article>
 	);
