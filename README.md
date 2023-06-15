@@ -1,4 +1,4 @@
-#**Live: [Jo's Current Reads](https://react18-current-reads.vercel.app/)**
+# **Live: [Jo's Current Reads](https://react18-current-reads.vercel.app/)**
 
 ---
 
